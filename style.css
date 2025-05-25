@@ -1,0 +1,239 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+.main-nav {
+    text-align: center;
+    background-color: #34495e;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background-color: #2980b9;
+}
+
+.converter-section, .static-section {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative; /* For scroll-snap effect, if desired */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2980b9;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 12px;
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+.converter-tool {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.converter-tool input[type="number"],
+.converter-tool select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1em;
+    flex: 1; /* Allows inputs and selects to grow */
+    min-width: 120px; /* Minimum width for responsiveness */
+}
+
+.converter-tool select {
+    background-color: #f9f9f9;
+}
+
+.converter-tool span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.converter-tool button {
+    background-color: #28a745; /* Green convert button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.converter-tool button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    flex-basis: 100%; /* Ensures result takes full width */
+    text-align: center;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+}
+
+.small-text {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 10px;
+    flex-basis: 100%; /* Ensures text takes full width */
+}
+
+.static-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.static-section a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.static-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.95em;
+    margin-top: 30px;
+}
+
+/* AdSense Ad Styling */
+.ad-placement {
+    margin: 30px auto;
+    text-align: center; /* Center the ad unit */
+    min-height: 90px; /* Give some space even if ad doesn't load immediately */
+    background-color: #e0e0e0; /* Placeholder background */
+    display: flex; /* For centering content within it if not using full-width-responsive */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden; /* Important for ads that might have slight overflows */
+}
+/* Specific ad slots, if you want different min-heights */
+.top-ad { min-height: 120px; }
+.middle-ad { min-height: 250px; }
+.bottom-ad { min-height: 120px; }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .main-nav a {
+        padding: 6px 10px;
+        font-size: 0.9em;
+        margin: 0 3px;
+    }
+
+    .converter-tool {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch;
+    }
+
+    .converter-tool input[type="number"],
+    .converter-tool select,
+    .converter-tool button {
+        width: 100%; /* Full width */
+        min-width: unset;
+    }
+
+    .converter-tool span {
+        margin: 10px 0;
+        display: block; /* Ensures "to" is on its own line */
+        text-align: center;
+    }
+
+    .result {
+        font-size: 1.3em;
+    }
+
+    .converter-section, .static-section {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+    .main-nav a {
+        flex-basis: 45%; /* Two items per row */
+        margin: 5px;
+    }
+}

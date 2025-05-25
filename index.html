@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Converter - Your All-in-One Conversion Tool</title>
+    <meta name="description" content="An easy-to-use, all-in-one universal converter for currency, length, weight, temperature, data, and more. Get instant results!">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Universal Converter</h1>
+            <p>Your one-stop solution for all conversions.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="main-nav">
+            <a href="#currency">Currency</a>
+            <a href="#length">Length</a>
+            <a href="#weight">Weight</a>
+            <a href="#temperature">Temperature</a>
+            <a href="#data">Data</a>
+            <a href="#time">Time</a>
+            </nav>
+
+        <div class="ad-placement top-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="YOUR_TOP_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <section id="currency" class="converter-section">
+            <h2>Currency Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="currencyAmount" placeholder="Amount" value="1">
+                <select id="currencyFrom">
+                    </select>
+                <span>to</span>
+                <select id="currencyTo">
+                    </select>
+                <button id="convertCurrency">Convert</button>
+                <div class="result" id="currencyResult"></div>
+                <p class="small-text">Exchange rates powered by API.</p>
+            </div>
+        </section>
+
+        <section id="length" class="converter-section">
+            <h2>Length Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="lengthValue" placeholder="Value">
+                <select id="lengthFrom">
+                    <option value="meters">Meters</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="km">Kilometers</option>
+                    <option value="miles">Miles</option>
+                </select>
+                <span>to</span>
+                <select id="lengthTo">
+                    <option value="feet">Feet</option>
+                    <option value="meters">Meters</option>
+                    <option value="inches">Inches</option>
+                    <option value="cm">Centimeters</option>
+                    <option value="km">Kilometers</option>
+                    <option value="miles">Miles</option>
+                </select>
+                <button id="convertLength">Convert</button>
+                <div class="result" id="lengthResult"></div>
+            </div>
+        </section>
+
+        <div class="ad-placement middle-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="YOUR_MIDDLE_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <section id="weight" class="converter-section">
+            <h2>Weight Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="weightValue" placeholder="Value">
+                <select id="weightFrom">
+                    <option value="kg">Kilograms</option>
+                    <option value="pounds">Pounds</option>
+                    <option value="grams">Grams</option>
+                    <option value="ounces">Ounces</option>
+                </select>
+                <span>to</span>
+                <select id="weightTo">
+                    <option value="pounds">Pounds</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="grams">Grams</option>
+                    <option value="ounces">Ounces</option>
+                </select>
+                <button id="convertWeight">Convert</button>
+                <div class="result" id="weightResult"></div>
+            </div>
+        </section>
+
+        <section id="temperature" class="converter-section">
+            <h2>Temperature Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="tempValue" placeholder="Value">
+                <select id="tempFrom">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <span>to</span>
+                <select id="tempTo">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <button id="convertTemp">Convert</button>
+                <div class="result" id="tempResult"></div>
+            </div>
+        </section>
+
+        <section id="data" class="converter-section">
+            <h2>Data Size Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="dataValue" placeholder="Value">
+                <select id="dataFrom">
+                    <option value="bits">Bits</option>
+                    <option value="bytes">Bytes</option>
+                    <option value="kilobytes">Kilobytes</option>
+                    <option value="megabytes">Megabytes</option>
+                    <option value="gigabytes">Gigabytes</option>
+                    <option value="terabytes">Terabytes</option>
+                </select>
+                <span>to</span>
+                <select id="dataTo">
+                    <option value="megabytes">Megabytes</option>
+                    <option value="gigabytes">Gigabytes</option>
+                    <option value="terabytes">Terabytes</option>
+                    <option value="bits">Bits</option>
+                    <option value="bytes">Bytes</option>
+                    <option value="kilobytes">Kilobytes</option>
+                </select>
+                <button id="convertData">Convert</button>
+                <div class="result" id="dataResult"></div>
+            </div>
+        </section>
+
+         <section id="time" class="converter-section">
+            <h2>Time Unit Converter</h2>
+            <div class="converter-tool">
+                <input type="number" id="timeValue" placeholder="Value">
+                <select id="timeFrom">
+                    <option value="seconds">Seconds</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                    <option value="years">Years</option>
+                </select>
+                <span>to</span>
+                <select id="timeTo">
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                    <option value="years">Years</option>
+                    <option value="seconds">Seconds</option>
+                </select>
+                <button id="convertTime">Convert</button>
+                <div class="result" id="timeResult"></div>
+            </div>
+        </section>
+
+        <div class="ad-placement bottom-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="YOUR_BOTTOM_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <section id="about" class="static-section">
+            <h2>About This Converter</h2>
+            <p>This is your go-to online tool for quick and accurate conversions across various units. Whether you're dealing with foreign currency, measuring ingredients, or understanding file sizes, our universal converter provides instant results.</p>
+            <p>We aim to be the most comprehensive and user-friendly conversion site on the web. Have a suggestion or need a new conversion type? <a href="#contact">Let us know!</a></p>
+        </section>
+
+        <section id="privacy" class="static-section">
+            <h2>Privacy Policy</h2>
+            <p>We value your privacy. This site uses cookies for analytics and to deliver personalized ads via Google AdSense. By using our site, you consent to our use of cookies. For more details, please read our full <a href="privacy.html" target="_blank">Privacy Policy</a> (consider linking to a separate, brief privacy.html page if your policy is long, or keep it concise directly on this page).</p>
+        </section>
+
+        <section id="contact" class="static-section">
+            <h2>Contact Us</h2>
+            <p>For support, feedback, or business inquiries, please reach out:</p>
+            <p>Email: <a href="mailto:support@universalconverter.com">support@universalconverter.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universal Converter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
